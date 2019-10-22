@@ -55,20 +55,54 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Views\UC0100_ContractDetails.xaml.cs">
+      <DependentUpon>UC0100_ContractDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0110_ProjectDetails.xaml.cs">
+      <DependentUpon>UC0110_ProjectDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0120_BillTo.xaml.cs">
+      <DependentUpon>UC0120_BillTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0130_ShipTo.xaml.cs">
+      <DependentUpon>UC0130_ShipTo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0140_TaxesEtc.xaml.cs">
+      <DependentUpon>UC0140_TaxesEtc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0150_Freight.xaml.cs">
+      <DependentUpon>UC0150_Freight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0200_BuildSpecs.xaml.cs">
+      <DependentUpon>UC0200_BuildSpecs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0210_Styles.xaml.cs">
+      <DependentUpon>UC0210_Styles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0220_Sections.xaml.cs">
+      <DependentUpon>UC0220_Sections.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0230_Additions.xaml.cs">
+      <DependentUpon>UC0230_Additions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0300_OrderEntry.xaml.cs">
+      <DependentUpon>UC0300_OrderEntry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0400_QuoteBuilder.xaml.cs">
+      <DependentUpon>UC0400_QuoteBuilder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UC0500_Admin.xaml.cs">
+      <DependentUpon>UC0500_Admin.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -95,14 +129,71 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BMS.DataAccess\BMS.DataAccess.csproj">
-      <Project>{7b525072-1161-4feb-996d-6fe0e45e1aeb}</Project>
-      <Name>BMS.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BMS.Model\BMS.Model.csproj">
       <Project>{d6a40ee9-42cf-4627-a485-67526c01abda}</Project>
       <Name>BMS.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0100_ContractDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0110_ProjectDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0120_BillTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0130_ShipTo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0140_TaxesEtc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0150_Freight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0200_BuildSpecs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0210_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0220_Sections.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0230_Additions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0300_OrderEntry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0400_QuoteBuilder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UC0500_Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

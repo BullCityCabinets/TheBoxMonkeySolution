@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BMS.UI
+namespace BMS.UI.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UC0150_Freight.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UC0150_Freight : UserControl
     {
-        public MainWindow()
+        public UC0150_Freight()
         {
             InitializeComponent();
         }

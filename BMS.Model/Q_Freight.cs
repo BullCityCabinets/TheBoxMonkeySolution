@@ -10,9 +10,9 @@ namespace BMS.Model
     {
         public enum FreightMethod { Unspecified, Delivered_Multiplier, Truck, Intermodal, Flat_Fee_Per_Section };
 
-        public bool isTruck;
-        public int TruckCubesMax;
-        public float TruckAdditional;
+        public bool IsTruck { get; set; }
+        public int TruckCubesMax { get; set; }
+        public float TruckAdditional { get; set; }
 
 
 

@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace BMS.UI
+namespace BMS.UI.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UC0110_ProjectDetails.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UC0110_ProjectDetails : UserControl
     {
-        public MainWindow()
+        public UC0110_ProjectDetails()
         {
             InitializeComponent();
         }

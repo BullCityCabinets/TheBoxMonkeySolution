@@ -8,19 +8,19 @@ namespace BMS.Quote
 {
     public class Q_ProjectDetails
     {
-        public string ID;
-        public string ProjName1;
-        public string ProjName2;
-        public string ProjName3;
+        public string ID {get; set;}
+        public string ProjName1 {get; set;}
+        public string ProjName2 {get; set;}
+        public string ProjName3 {get; set;}
 
-        public string SalesRepName;
-        public string SalesCode;
-        public string SalesRegion;
-        public string Delivery_Target;
-        public string PO_Number;
-        public string PO_Reference;
-        public string PO_NumNote;
-        public string PO_RefNote;
+        public string SalesRepName {get; set;}
+        public string SalesCode {get; set;}
+        public string SalesRegion {get; set;}
+        public string Delivery_Target {get; set;}
+        public string PO_Number {get; set;}
+        public string PO_Reference {get; set;}
+        public string PO_NumNote {get; set;}
+        public string PO_RefNote {get; set;}
         
 
 
